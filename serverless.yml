@@ -16,7 +16,6 @@ service: lambdatest1 # NOTE: update this with your service name
 plugins:
   - serverless-offline
 
-
 #app: your-app-name
 #tenant: your-tenant-name
 
@@ -66,10 +65,8 @@ functions:
     handler: handler.hello
     events:
       - http:
-          path: ruta1
+          path: ruta1/{name}
           method: get
-          
-
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
